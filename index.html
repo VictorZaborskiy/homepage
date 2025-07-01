@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Визитка</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      max-width: 600px;
+    }
+    .container h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #444444;
+    }
+    .container p {
+      margin: 1rem 0 1rem;
+      color: #444444;
+      font-size: 1.1rem;
+    }
+    .container a img {
+      width: 100%;
+      max-width: 400px;
+      min-width: 400px;
+      min-height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.4s ease;
+    }
+    .container a img:hover {
+      transform: scale(1.02);
+    }
+    @media (max-width: 420px) {
+      .container a img {
+        min-width: 100%;
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Виктор Заборский</h1>
+    <p>Product Manager</p>
+    <p>Бизнес / cистемный аналитик</p>
+    <a href="https://t.me/victor_zaborskiy" target="_blank">
+      <img src="telegram.png" alt="Telegram">
+    </a>
+  </div>
+
+</body>
+</html>
